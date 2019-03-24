@@ -1,0 +1,10 @@
+.padding{
+    padding-top:10px;
+}
+#signUpForm{
+    display:none;
+
+}
+.error{
+    color:red;
+}

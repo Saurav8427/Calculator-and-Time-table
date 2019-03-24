@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <title>Calculator</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" media="screen" >
+
+<!--Styling of all buttons and the input field-->
+     <style>
+         
+         #a{
+            text-shadow: 1px 1px 2px black;
+            background-color: lightcyan;
+             border: solid 4px black;   
+             font-size: 52px;color:black;
+             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             width: 522px;
+             height: 100px;
+             box-shadow: 0 4px 8px 0 rgba(0, 0, 0,  0.4), 0 6px 20px 0 rgba(0, 0, 0,  0.4);
+
+         }
+         #b{
+            color:#001f3f;
+             font-size:64px;
+             text-shadow: 1px 1px 2px ;
+             
+         }
+         .c{
+             width:185px;
+             height: 50px;
+             font-size: 28px;
+             
+         }
+
+         #d{margin-left:600px;
+         background-image:url(Images/num2.jpg);
+         height: 100%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;}
+         #e{
+             padding:10px;
+             border:solid 2px;
+             border-color: black;
+             font-size: 40px;
+         }
+         #f{width: 400px;
+            height: 40px;
+            border:solid 2px;
+            border-color: black;}
+        
+        #l{
+            text-shadow: 1px 1px 2px blue;
+            text-align: center;
+            width:130px;
+            height:90px;
+            font-size: 60px;
+            border:solid 3px;
+            color:#001f3f;
+            border-color:black;
+            box-shadow: inset 0 0 0 200px rgba(255,255,255, 0.4),0 6px 20px 0 rgba(0, 0, 0,  0.4);
+             
+        }
+        #p{
+            text-shadow: 1px 1px 2px black;
+            font-size: 60px;
+            width:390px;
+            height:90px;
+            border:solid 3px;
+             border-color:black;
+             box-shadow: inset 0 0 0 200px rgba(255,255,255, 0.4),0 6px 20px 0 rgba(0, 0, 0,  0.4);
+        }
+        #j{
+            text-shadow: 1px 1px 2px black;
+            font-size: 60px;
+            height:90px;
+            width:130px;
+            border:solid 3px;
+            border-color:black;
+            box-shadow: inset 0 0 0 200px rgba(255,255,255, 0.4),0 6px 20px 0 rgba(0, 0, 0,  0.4);
+        }
+        #l:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ), 0 6px 20px 0 rgba(0, 0, 0  );}
+        #p:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ), 0 6px 20px 0 rgba(0, 0, 0  );}
+        #j:hover{box-shadow: 0 4px 8px 0 rgba(0, 0, 0 ), 0 6px 20px 0 rgba(0, 0, 0  );}
+
+        #m{
+            margin-left: 1px;
+        }
+        #a:hover{background-color:rgba(21, 250, 0, 0.1);}
+        
+    
+     </style>
+     
+ </head>
+ <body id ="d">
+
+    <h1 id ="b"><b>Calculator for PC</b></h1>
+<!--here the output is get printed-->
+    <div class="row">
+    <div class= col-sm-4><input id = "a" type="text" ></input><br></div>
+
+    <!--This code forms the desired divs which on click responses accordingly-->
+    </div>
+    <div class="row" id = "m">
+            <div class="col-lg-1" id = "l" onclick="prnt('/')">
+                /
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('*')">
+                *
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('-')">
+                -
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('+')">
+                +
+            </div>
+            
+    </div>
+    <div class="row" id = "m">
+        <div class="col-lg-1" id = "l" onclick="prnt('7')">
+            7
+        </div>
+        <div class="col-lg-1" id = "l" onclick="prnt('8')">
+            8
+        </div>
+        <div class="col-lg-1" id = "l" onclick="prnt('9')">
+            9
+        </div>
+        <div class="col-lg-1" id = "l" onclick="prnt('.')">
+            <strong>.</strong>
+        </div>
+        
+    </div>
+    <div class="row" id = "m">
+            <div class="col-lg-1" id = "l" onclick="prnt('4')">
+                4
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('5')">
+                5
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('6')">
+                6
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('%')">
+                %
+            </div>
+            
+    
+    </div>
+
+    <div class="row" id = "m">
+            <div class="col-lg-1" id = "l" onclick="prnt('1')">
+                1
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('2')">
+                2
+            </div>
+            <div class="col-lg-1" id = "l" onclick="prnt('3')">
+                3
+            </div>
+            <div class="col-lg-1" id = "j" onclick="myFunction2()">
+                Clr
+        </div>
+            
+        </div>
+    <div class="row" id = "m">
+         
+          <div class="col-lg-4" id = "l" onclick="prnt(0)">
+              0
+          </div>
+          <div class="col-lg-2" id = "p" onclick="myFunction()">
+              Solve
+          </div>
+         
+     </div>
+<div style="font-size:48px;"><b>Press ENTER to Solve</b></div>
+    <script>
+//THis code uses Enter key (13) to Call the Solve key in calculator
+var inp = document.getElementById("a");
+
+inp.addEventListener("keyup", function(event) {
+  
+  if (event.keyCode === 13) {
+    //event.preventDefault();
+    document.getElementById("p").click();
+  }
+});
+// For Space-Bar to Clear Output field
+// var inps = document.getElementById("j");
+
+// inps.addEventListener("keyup", function(event) {
+  
+//   if (event.keyCode === 32) {
+//     event.preventDefault();
+//     document.getElementById("j").click();
+//   }
+// });
+
+    //this function solves the equation that is formed in the input field 
+
+    function myFunction(){
+       x=document.getElementById("a").value;
+       text = eval(x);
+       if(text<1 && text>0 || text>-1 && text<0)
+       { n=text.toFixed(7);
+        document.getElementById("a").value=n;
+       }
+       else
+       {
+        document.getElementById("a").value=text;
+       }
+       
+     }  
+     //resolves 0.1+0.2 error
+    // function strip(number) {
+    // return (parseFloat(number).toPrecision(12));
+    // }
+
+
+    //this funtion erase all the data from the input field
+
+   function myFunction2(){
+       document.getElementById("a").value="";
+       text="";
+     }     
+    text="";
+
+
+    //this function prints the numbers,symmbols on the input field
+    
+   function prnt(num){
+    //num=document.getElementById("k").value;
+    text+=num;
+    document.getElementById("a").value=text;
+     }
+        
+        </script>
+
+ </body>
+ </html>

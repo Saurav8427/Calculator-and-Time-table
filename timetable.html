@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/table.css">
+</head>
+
+<body id="bodi">
+    <!--<p><input id="p" type="text"></input><button id="g" onclick="drop()">Submit</button> </p>
+    <p><input id="u" type="text"></input> <button id="g" onclick="drop2()">Submit</button></p>
+    <p><input id="v" type="text"></input> <button id="g" onclick="drop3()">Submit</button></p>-->
+
+    <h1 id="head"><center>TIME TABLE</center></h1>
+
+    <table class="table">
+        <tr class="a">
+            <td class="a">TIME</td>
+            <td class="a"><center>8.00AM </center></td>
+            <td class="a"><center>9.00AM </center></td>
+            <td class="a"><center>10.00AM</center></td>
+            <td class="a"><center>11.00AM</center></td>
+            <td class="a"><center>12.00AM</center></td>
+            <td class="a"><center>1.00PM </center></td>
+            <td class="a"><center>2.00PM </center></td>
+            <td class="a"><center>3.00PM </center></td>
+            <td class="a"><center>4.00PM </center></td>
+            <td class="a"><center>5.00PM </center></td>
+        </tr>
+
+
+        <tr id="b">
+            <td class="a">MON</td>
+            <td class="a" id="a2">
+                <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div>
+            </td>   
+            <td class="a" id="a3">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a" id ="a4">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div> </td>
+            <td class="lunch"style= "border-right: solid 2px black;border-left: solid 2px black;"><center>L</center></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                <div class="dropdown-content">
+                <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge();">OK</button></a>
+                </div>
+            </div></td>
+        </tr>
+
+
+
+        <tr id="c">
+            <td class="a">TUE</td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="lunch"style= "border-right: solid 2px black;border-left: solid 2px black;">
+                <center>U</center>
+            </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+        </tr>
+
+
+
+        <tr id="d">
+            <td class="a">WED</td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="lunch"style= "border-right: solid 2px black;border-left: solid 2px black;">
+                <center>N</center>
+            </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+            <td class="a"> <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div> </td>
+        </tr>
+
+
+
+        <tr id="e">
+            <td class="a">THU</td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="lunch" style= "border-right: solid 2px black;border-left: solid 2px black;">
+                <center>C</center>
+            </td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+        </tr>
+
+
+
+        <tr id="f">
+            <td class="a">FRI</td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="lunch" style="border-right: solid 2px black;border-left: solid 2px black;border-bottom: solid 2px black;">
+                <center>H</center>
+            </td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+            <td class="a">  <div class="dropdown"><input id ="inp1" readonly></input><input id ="inp2" readonly></input><input id ="inp3"readonly></input>
+                    <div class="dropdown-content">
+                    <a>Subject:-<input id ="y1" type="text"></input>&nbsp;<button id ="but" onclick="feed1()">OK</button></a>
+                    <a>Teacher:-<input id ="y2" type="text"></input>&nbsp;<button id ="but" onclick="feed2()">OK</button></a>
+                    <a>Venue:-&nbsp;&nbsp;<input id ="y3" type="text"></input>&nbsp;<button id ="but" onclick="feed3()">OK</button></a>
+                    <a>Hours:-&nbsp;&nbsp;<input id ="h1" type="number" max="3" min="1"></input>&nbsp;<button id ="but" onclick="merge()">OK</button></a>
+                    </div>
+                </div></td>
+        </tr>
+
+
+    </table>
+
+    <script>
+        //Writes the values in table that is taken from the input field.
+    function feed1(){
+        x=document.getElementById("y1").value;
+        text="";
+        text=x;
+        document.getElementById("inp1").value=text;
+        if(text=="")
+        {alert("Please Enter Subject");}
+       
+    }
+    //Writes the values in table that is taken from the input field.
+    function feed2(){
+         x=document.getElementById("y2").value;
+         text="";
+         text=x;
+         document.getElementById("inp2").value=text;
+         if(text=="")
+        {alert("Please Enter Subject");}
+        
+    }
+    //Writes the values in table that is taken from the input field.
+    function feed3(){
+        x=document.getElementById("y3").value;
+        text="";
+        text=x;
+        document.getElementById("inp3").value=text;
+        if(text=="")
+        {alert("Please Enter Subject");}
+    }
+   /*very important variable k it is used like a flag for example if on creating at 2hr input field OK button again and again will not delete more cells 
+   as we are deleting cells when a colspan occurs*/ 
+   /* Loss of data might occur*/
+     
+    var k;
+    function merge(){
+        h=document.getElementById("h1").value;
+        
+        if(k==2)
+        {
+            //If a 2hr input is already clicked it will insert a cell;
+            var u=document.getElementById("b").insertCell(2);
+            u.style.border="solid 2px black";
+
+                if(h==2)
+                {
+                    k = 2;
+                    document.getElementById("a2").colSpan="2";
+                    document.getElementById("inp1").style.width = "380px";
+                    document.getElementById("inp2").style.width = "380px";
+                    document.getElementById("inp3").style.width = "380px";
+                    document.getElementById("inp1").style.textAlign = "center";
+                    document.getElementById("inp2").style.textAlign = "center";
+                    document.getElementById("inp3").style.textAlign = "center";
+                    document.getElementById("b").deleteCell(2);
+                }
+                else if(h==3)
+                {   
+                    k = 3;
+                    document.getElementById("a2").colSpan="3";
+                    document.getElementById("inp1").style.width = "585px";
+                    document.getElementById("inp2").style.width = "585px";
+                    document.getElementById("inp3").style.width = "585px";
+                    document.getElementById("inp1").style.textAlign = "center";
+                    document.getElementById("inp2").style.textAlign = "center";
+                    document.getElementById("inp3").style.textAlign = "center";
+                    document.getElementById("b").deleteCell(2);
+                    document.getElementById("b").deleteCell(3);
+                }
+            
+                else if(h==1)
+                {   
+                                              
+                    document.getElementById("b").deleteCell(2);
+                    document.getElementById("a2").colSpan="1";
+                    document.getElementById("inp1").style.width = "180px";
+                    document.getElementById("inp2").style.width = "180px";
+                    document.getElementById("inp3").style.width = "180px";
+
+                }
+                else
+                {
+                    alert("Hours limit Exceeds!");
+                    document.getElementById("b").deleteCell(2);
+                }
+            
+        }
+        
+        else if(k==3 && h<=3)
+        {   
+             //If a 3hr input is already clicked and go for it again, it will insert a cell;
+            var u1=document.getElementById("b").insertCell(2);
+            u1.style.border="solid 2px black";
+            /*when a new cell is inserted it don't have same properties like other cells we are giving some properties like them to make a symmetry
+            moreover this input field created inside cell will not be able to function like other cells*/
+            var p1=document.createElement("INPUT");
+            m1 = u1.appendChild(p1);
+            m1.style.width="200px";
+            m1.style.height="157px";
+            m1.style.fontSize ="28px";
+            m1.style.marginLeft="8px";
+            m1.style.marginRight="8px";
+            m1.style.border="none";
+            // m1.style.border="solid 2px black";
+            m1.readOnly="true";
+            m1.style.background="transparent";
+            m1.style.outline="none";
+            // m1.style.padding="10px";
+            var u2=document.getElementById("b").insertCell(2);
+            u2.style.border="solid 2px black";
+           
+            
+         
+                if(h==2)
+                {
+                    k = 2;
+                    document.getElementById("a2").colSpan="2";
+                    document.getElementById("inp1").style.width = "380px";
+                    document.getElementById("inp2").style.width = "380px";
+                    document.getElementById("inp3").style.width = "380px";
+                    document.getElementById("inp1").style.textAlign = "center";
+                    document.getElementById("inp2").style.textAlign = "center";
+                    document.getElementById("inp3").style.textAlign = "center";
+                    document.getElementById("b").deleteCell(2);
+                }
+                else if(h==3)
+                {
+                    k = 3;
+                    document.getElementById("a2").colSpan="3";
+                    document.getElementById("inp1").style.width = "585px";
+                    document.getElementById("inp2").style.width = "585px";
+                    document.getElementById("inp3").style.width = "585px";
+                    document.getElementById("inp1").style.textAlign = "center";
+                    document.getElementById("inp2").style.textAlign = "center";
+                    document.getElementById("inp3").style.textAlign = "center";
+                    document.getElementById("b").deleteCell(2);
+                    document.getElementById("b").deleteCell(3);
+                }
+            
+                else if(h==1)
+                {
+                
+                    document.getElementById("b").deleteCell(2);
+                    document.getElementById("b").deleteCell(3);
+                    document.getElementById("a2").colSpan="1";
+                    document.getElementById("inp1").style.width = "180px";
+                    document.getElementById("inp2").style.width = "180px";
+                    document.getElementById("inp3").style.width = "180px";
+
+                }
+                else
+                {
+                    alert("Hours limit Exceeds!");
+                }
+        }
+        
+        
+        else if(h==2)
+        {   
+            k = 2;
+            document.getElementById("a2").colSpan="2";
+            document.getElementById("inp1").style.width = "380px";
+            document.getElementById("inp2").style.width = "380px";
+            document.getElementById("inp3").style.width = "380px";
+            document.getElementById("inp1").style.textAlign = "center";
+            document.getElementById("inp2").style.textAlign = "center";
+            document.getElementById("inp3").style.textAlign = "center";
+            document.getElementById("b").deleteCell(2);
+        }
+        else if(h==3)
+        {   
+            k = 3;
+            document.getElementById("a2").colSpan="3";
+            document.getElementById("inp1").style.width = "585px";
+            document.getElementById("inp2").style.width = "585px";
+            document.getElementById("inp3").style.width = "585px";
+            document.getElementById("inp1").style.textAlign = "center";
+            document.getElementById("inp2").style.textAlign = "center";
+            document.getElementById("inp3").style.textAlign = "center";
+            document.getElementById("b").deleteCell(2);
+            document.getElementById("b").deleteCell(3);
+        }
+    
+         else if(h==1)
+         {
+          
+             document.getElementById("a2").colSpan="0";
+             document.getElementById("a2").style.borderRightStyle ="solid";
+             document.getElementById("a3").style.borderLeftStyle = "solid";
+             document.getElementById("inp1").style.textAlign = "center";
+             document.getElementById("inp2").style.textAlign = "center";
+             document.getElementById("inp3").style.textAlign = "center";
+             document.getElementById("inp1").style.width = "180px";
+             document.getElementById("inp2").style.width = "180px";
+             document.getElementById("inp3").style.width = "180px";
+         }
+         
+         else{
+             if(h==""){
+                 alert("Please enter hours!")
+             }
+             else{
+                alert("Hours limit Exceeds!");
+             }
+             
+         }
+         
+    }
+
+   
+
+
+    </script>
+</body>
+
+</html>
